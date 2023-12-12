@@ -27,7 +27,6 @@ git config --global user.email rodrigo.study01@gmail.com
 git config --global user.name "Rodrigo R Gomes"
 (comando para que seu nome apareça no controle das versões que vocâ alterar)
 
-
  git remote add origin https://github.com/r0dr1g0g0m3s/project1/tree/master
 (adicionar o reposório que irá utilizar)
 
@@ -35,3 +34,19 @@ get remote rm origin
 (caso tenha adicionado o endereço errado do reposório)
 
 git push --set-upstream origin master
+
+git push
+(quando for atualizar/adicionar os arquivos locais no repositório)
+
+git reflog
+(ver todas as versões das modificações e suas IDs)
+
+git reset -hard "ID"
+(Tornar/voltar/atualizar o arquivo para a versão da ID)
+
+
+
+
+
+
+
