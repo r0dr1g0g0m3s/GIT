@@ -1,6 +1,7 @@
 Curso de Git e Github COMPLETO 2023 [Iniciantes] + Desafios + Muita Prática
 https://www.youtube.com/watch?v=kB5e-gTAl_s
 
+
 winget install --id Git.Git -e --source winget
 (https://git-scm.com/download/win)
 
@@ -48,14 +49,12 @@ git reset -hard "ID"
 (Tornar/voltar/atualizar o arquivo para a versão da ID)
 
 
-
 OBS: Sempre que alterar um arquivo utilize a sequencia abaixo:
 
 Git status
 Git add .
 Git commit -m "descreva a alteração"
 git push
-
 
 
 March 
