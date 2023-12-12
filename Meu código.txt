@@ -2,15 +2,20 @@ Curso de Git e Github COMPLETO 2023 [Iniciantes] + Desafios + Muita Prática
 https://www.youtube.com/watch?v=kB5e-gTAl_s
 
 
+
+INSTALANDO O GIT NO NO PC
+
 winget install --id Git.Git -e --source winget
 (https://git-scm.com/download/win)
 
+
+CONFIGURANDO O GIT NO PC
 Open git bash here
 (abrir terminal do git clicando com botão direito dentro da pasta onde ficarão os arquivos utilizados para atualizar o repositório)
 
 git init
 (criação de um arquivo git que controla a versão das modificações de outros arquivos)
-(untraked files - arquivos que não estão no controle de versão)
+(untraked files - arquivos que não estão no controle de versão - Esse arquivo fica oculto na pasta onde você o criou)
 
 git status
 (ver quais arquivos tem dentro da pasta do git)
@@ -72,7 +77,7 @@ Acessando uma branch
 git checkout "name"
 
 
-Atualizando a branch principal (master) com as atualizações da secundária
+ATUALIZANDO A BRANCH PRINCIPAL COM AS ATUALIZAÇÕES DA SECUNDÁRIA
 
 git pull
 git branch
@@ -83,3 +88,19 @@ git merch "second"
 git push
 
 
+CRIANDO UMA BRANCH COM BASE EM UMA JÁ EXISTENTE
+
+git checkout -b "nome da branche nova" "nome da branch a ser copiada"
+
+
+PULL REQUEST (UM MERGE DEMOCRÁTICO TEM QUE SER APROVADO)
+
+Direto na plataforma do GITHUB
+
+
+GIT IGNORE (EXCLUINDO DO CONTROLE DE VERSÃO)
+
+touch .gitignore
+(Cria o arquivo .gitignore)
+Crie uma pasta onde você não deseja que os arquivos dentro dela sejam conhecidos ou atualizados no repositório.
+Depois entre dentro desse arquivo e escreva la dentro a pasta que você quer que seja ignorada pelos comandos "git status ou git add . (por exemplo: segredos/)
