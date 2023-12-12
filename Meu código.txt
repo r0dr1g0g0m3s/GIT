@@ -1,1 +1,37 @@
-Olé
+winget install --id Git.Git -e --source winget
+(https://git-scm.com/download/win)
+
+Open git bash here
+(abrir terminal do git clicando com botão direito dentro da pasta onde ficarão os arquivos utilizados para atualizar o repositório)
+
+git init
+(criação de um arquivo git que controla a versão das modificações de outros arquivos)
+(untraked files - arquivos que não estão no controle de versão)
+
+git status
+(ver quais arquivos tem dentro da pasta do git)
+
+git add ""nome do arquivo""
+(incluindo arquivo no controle de versão)
+
+git add . 
+(Incluindo todos os arquivos da pasta ao controle de versões do git)
+
+
+git commit -m "commit inicial"
+(commit são versões do código)
+
+git config --global user.email rodrigo.study01@gmail.com
+(inserir o mesmo e-mail utilizado no github)
+
+git config --global user.name "Rodrigo R Gomes"
+(comando para que seu nome apareça no controle das versões que vocâ alterar)
+
+
+ git remote add origin https://github.com/r0dr1g0g0m3s/project1/tree/master
+(adicionar o reposório que irá utilizar)
+
+get remote rm origin
+(caso tenha adicionado o endereço errado do reposório)
+
+git push --set-upstream origin master
