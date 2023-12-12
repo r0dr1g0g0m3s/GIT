@@ -22,7 +22,7 @@ git add .
 
 
 git commit -m "commit inicial"
-(Dando nome a versão. Commit são versões do código)
+(Dando nome a versão. Commit são versões do código
 
 git config --global user.email rodrigo.study01@gmail.com
 (inserir o mesmo e-mail utilizado no github)
@@ -63,17 +63,24 @@ March
 
 Branch(galho - caminhos diferentes)
 
-
 Criando uma branch
 git branch "name"
-
 
 Listando as branchs
 git branch
 
-
 Acessando uma branch
 git checkout "name"
 
+
+Atualizando a branch principal (master) com as atualizações da secundária
+
+git pull
+git branch
+git checkout "second"
+git pull
+git checkout master
+git merch "second"
+git push
 
 
