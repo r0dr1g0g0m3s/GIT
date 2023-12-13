@@ -10,6 +10,7 @@ winget install --id Git.Git -e --source winget
 
 
 CONFIGURANDO O GIT NO PC
+
 Open git bash here
 (abrir terminal do git clicando com botão direito dentro da pasta onde ficarão os arquivos utilizados para atualizar o repositório)
 
@@ -104,3 +105,31 @@ touch .gitignore
 (Cria o arquivo .gitignore)
 Crie uma pasta onde você não deseja que os arquivos dentro dela sejam conhecidos ou atualizados no repositório.
 Depois entre dentro desse arquivo e escreva la dentro a pasta que você quer que seja ignorada pelos comandos "git status ou git add . (por exemplo: segredos/)
+git commit -m "nome da alteração"
+
+
+CERTIFICADO / KEY SSH
+
+ssh-keygen -t rsa -b rodrigo "rodrigo.study01@gmail.com"
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/rodrigo
+cat ~/.ssh/rodrigo.pub (copie a chave)
+git config --global gpg.format ssh
+git config --global user.signinkey 'DIGITE SUA CHAVE PÚBLICA ENTRE ASPAS SIMPLES'
+git config --global commit.gpgsign true
+git config --global ctag.gogsign true
+eval "$(ssh-agent -s)"
+
+touch "teste"
+git clone git@github.com:r0dr1g0g0m3s/Docker.git
+git add .
+git commit -m "teste"
+git touch
+
+
+
+
+
+
+
+
