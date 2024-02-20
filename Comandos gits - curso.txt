@@ -58,7 +58,8 @@ Git commit -m "descreva a alteração"
 git push
 
 
-March 
+merge
+git merge secundaria  (tenha certeza que estas na branch master e deseja copiar tudo da branch secundaria antes de executar)
 (Soma de branchs)
 
 Branch(galho - caminhos diferentes)
@@ -79,5 +80,11 @@ git checkout "name"
 Criando chave ssh
 
 ssh-keygen -C "seu e-mail"
+
+Baixar a branch master
+git clone ssh://endereçodorepositorio
+
+baixar a branch master + a secundária
+git clone -b nomedabranchsecundaria ssh://endereçodorepositorio
 
 
