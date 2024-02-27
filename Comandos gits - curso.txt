@@ -11,6 +11,12 @@ git init
 (criação de um arquivo git que controla a versão das modificações de outros arquivos)
 (untraked files - arquivos que não estão no controle de versão)
 
+git clone ssh://...
+(clonar o repositório da branch master)
+
+git clone -b nome_da_branch url_do_repositorio
+(clonar um repositório da branch secundária)
+
 git status
 (ver quais arquivos tem dentro da pasta do git)
 
