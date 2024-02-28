@@ -29,6 +29,9 @@ git add .
 git commit -m "commit inicial"
 (Dando nome a versão. Commit são versões do código)
 
+git reset --hard HEAD~1
+(cancelar o último commit feito, mas que não passou no push.)
+
 git config --global user.email rodrigo.study01@gmail.com
 (inserir o mesmo e-mail utilizado no github)
 
