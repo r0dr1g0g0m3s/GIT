@@ -96,8 +96,6 @@ git clone ssh://endereçodorepositorio
 baixar a branch master + a secundária
 git clone -b nomedabranchsecundaria ssh://endereçodorepositorio
 
-
-
 #caso tenha baixado somente a branch master:
 git checkout -b nomedabranchsecundaria origin/nomedabranchsecundaria
 Isso criará uma nova branch local chamada nomedabranchsecundaria e a configurará para acompanhar a branch remota nomedabranchsecundaria. Isso basicamente trará a branch secundária do repositório remoto para o seu repositório local.
