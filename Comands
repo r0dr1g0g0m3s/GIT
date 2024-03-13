@@ -52,14 +52,14 @@ git push --set-upstream origin master
 git push
 (quando for atualizar/adicionar os arquivos locais no repositório)
 
-git reflog
+#git reflog
 (ver todas as versões das modificações e suas IDs)
 
-git reset -hard "ID"
+#git reset -hard "ID"
 (Tornar/voltar/atualizar o arquivo para a versão da ID)
 
 
-OBS: Sempre que alterar um arquivo utilize a sequencia abaixo:
+#OBS: Sempre que alterar um arquivo utilize a sequencia abaixo:
 
 Git status
 Git add .
@@ -67,38 +67,36 @@ Git commit -m "descreva a alteração"
 git push
 
 
-merge
+#merge
 git merge secundaria  (tenha certeza que estas na branch master e deseja copiar tudo da branch secundaria antes de executar)
 (Soma de branchs)
 
 Branch(galho - caminhos diferentes)
 
-
-Criando uma branch
+#Criando uma branch
 git branch "name"
 
-
-Listando as branchs
+#Listando as branchs
 git branch
 
-
-Acessando uma branch
+#Acessando uma branch
 git checkout "name"
 
-
-Criando chave ssh
-
+#Criando chave ssh
 ssh-keygen -C "seu e-mail"
 
-Baixar a branch master
+#Baixar a branch master
 git clone ssh://endereçodorepositorio
+
+#Clonar o último commit da brancha secundária homologacao do repositório sisarma.git hospedado em desenv.tjms.jus.br.
+git clone --depth 1 ssh://enderecodorepositorio -b secundaria
 
 baixar a branch master + a secundária
 git clone -b nomedabranchsecundaria ssh://endereçodorepositorio
 
 #caso tenha baixado somente a branch master:
 git checkout -b nomedabranchsecundaria origin/nomedabranchsecundaria
-Isso criará uma nova branch local chamada nomedabranchsecundaria e a configurará para acompanhar a branch remota nomedabranchsecundaria. Isso basicamente trará a branch secundária do repositório remoto para o seu repositório local.
+#Isso criará uma nova branch local chamada nomedabranchsecundaria e a configurará para acompanhar a branch remota nomedabranchsecundaria. Isso basicamente trará a branch secundária do repositório remoto para o seu repositório local.
 
 #descobrindo hash dos últimos commits
  git log --decorate --oneline --graph --all
