@@ -101,3 +101,6 @@ git checkout -b nomedabranchsecundaria origin/nomedabranchsecundaria
 #descobrindo hash dos últimos commits
  git log --decorate --oneline --graph --all
 
+#Baixando duas branchs específicas
+git clone --single-branch --branch <nome_da_branch_principal> --branch <nome_da_branch_secundaria> <url_do_repositório>
+
