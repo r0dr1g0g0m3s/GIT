@@ -59,12 +59,12 @@ git push
 (Tornar/voltar/atualizar o arquivo para a versão da ID)
 
 
-#OBS: Sempre que alterar um arquivo utilize a sequencia abaixo:
-
+Sempre que alterar um arquivo utilize a sequencia abaixo:
 Git status
 Git add .
 Git commit -m "descreva a alteração"
-git push
+git push ou git push origin <branch_name>
+
 
 
 #merge
@@ -100,6 +100,13 @@ git checkout -b nomedabranchsecundaria origin/nomedabranchsecundaria
 
 #descobrindo hash dos últimos commits
  git log --decorate --oneline --graph --all
+ou
+git log
+
+Reverta cada um dos três últimos commits, começando pelo mais recente:
+git revert HEAD    # Reverte o commit mais recente
+git revert HEAD~1  # Reverte o penúltimo commit
+git revert HEAD~2  # Reverte o antepenúltimo commit
 
 #Baixando duas branchs específicas
 git clone --single-branch --branch <nome_da_branch_principal> --branch <nome_da_branch_secundaria> <url_do_repositório>
